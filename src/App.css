@@ -1,0 +1,15 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+.user-button:hover {
+    background-color:hsl(239, 57%, 85%) !important;
+}
+
+.reply-button:hover {
+    background-color: 'red' !important;
+}
+
+
+@media screen and (max-width : 768px){
+    
+}
