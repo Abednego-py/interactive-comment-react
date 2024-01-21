@@ -11,5 +11,17 @@ body {
 
 
 @media screen and (max-width : 768px){
-    
+    .post-reponsive {
+        width: 100% !important;
+        box-shadow: none ;
+        margin-left: 2% !important;
+        display: block !important;
+    }
+    .divider {
+        display: none !important;
+    }
+    .replies-reponsive {
+        width: 90% !important;
+      
+    }
 }

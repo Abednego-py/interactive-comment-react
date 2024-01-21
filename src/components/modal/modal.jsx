@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import './modalStyles.css'
 
 function Modal({children, turnOffModal, deletePost}) {
    const ModalBackgroundStyle = {
@@ -32,7 +33,7 @@ function Modal({children, turnOffModal, deletePost}) {
 
   return (
     <div className="w-100 h-100" style={ModalBackgroundStyle} onClick={turnOffModal}>
-        <div style={ModalBodyStyle} onClick={e => e.stopPropagation()}>
+        <div style={ModalBodyStyle} onClick={e => e.stopPropagation()} className='_modal' >
             <h4 className='font-weight-bold p-1'>Delete comment</h4>
             <p style={{'color':'hsl(211, 10%, 45%)', 'fontWeight':"normal", 'fontSize':'1em'}} className='p-1'>Are you sure you want to delete this
                 comment? This will remove the comment

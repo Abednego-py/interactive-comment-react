@@ -1,0 +1,6 @@
+@media screen and (max-width : 768px){ 
+ ._modal {
+    margin : 300px auto;
+    width: 80% !important;
+ }
+}

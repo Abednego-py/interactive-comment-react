@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
+import './postStyles.css'
 
 function NewPost({currentUserImg, onSubmit, setContent, isReply, className}) {
 
@@ -10,7 +11,8 @@ function NewPost({currentUserImg, onSubmit, setContent, isReply, className}) {
         'borderRadius' : '10px',
         'bottom' :'20px',
         'left' : '0',
-        'right' : '0'
+        'right' : '0',
+        'width' : '50%'
       }
 
     const handleTextChange = (e) => {
@@ -19,7 +21,7 @@ function NewPost({currentUserImg, onSubmit, setContent, isReply, className}) {
     }
     
   return (
-    <div className={`container-fluid d-flex w-50 mt-5 p-3 ${className} `} style={newPostStyle}>
+    <div className={`container-fluid d-flex mt-5 p-3 post-responsive ${className} `} style={newPostStyle}>
         <img src={currentUserImg} alt="" width={30} height={30}/>
         <textarea name="" id="" 
         className='w-75 p-3' 
